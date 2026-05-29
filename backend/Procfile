@@ -1,2 +1,2 @@
 web: gunicorn breathe_esg.wsgi --bind 0.0.0.0:$PORT --log-file -
-release: python manage.py migrate && python setup_demo.py
+release: python setup_demo.py

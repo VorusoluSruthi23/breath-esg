@@ -13,7 +13,8 @@ from .serializers import EmissionRecordSerializer, IngestionBatchSerializer, Aud
 
 
 class LoginView(APIView):
-    permission_classe= [AllowAny]
+    permission_classes= []
+    authentication_classes = []
     def post(self, request):
         username = request.data.get('username')
         password = request.data.get('password')

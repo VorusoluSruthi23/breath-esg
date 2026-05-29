@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python manage.py migrate && python setup_demo.py && gunicorn breathe_esg.wsgi --bind 0.0.0.0:$PORT --log-file -",
+    "startCommand": "gunicorn breathe_esg.wsgi --bind 0.0.0.0:$PORT --log-file -",
     "healthcheckPath": "/health/",
     "restartPolicyType": "ON_FAILURE"
   }

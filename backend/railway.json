@@ -5,7 +5,7 @@
   },
   "deploy": {
     "startCommand": "gunicorn breathe_esg.wsgi --log-file -",
-    "healthcheckPath": "/api/auth/login/",
+    "healthcheckPath": "/health/",
     "restartPolicyType": "ON_FAILURE"
   }
 }

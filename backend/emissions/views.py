@@ -1,7 +1,7 @@
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.views import APIView
 from django.utils import timezone
 from django.db.models import Sum, Count, Q
@@ -13,6 +13,7 @@ from .serializers import EmissionRecordSerializer, IngestionBatchSerializer, Aud
 
 
 class LoginView(APIView):
+    permission_classe= [AllowAny]
     def post(self, request):
         username = request.data.get('username')
         password = request.data.get('password')

@@ -1,0 +1,6 @@
+meter_id,site_name,period_start,period_end,consumption,unit,country,tariff
+MTR-001,London HQ,2024-01-01,2024-01-31,48000,kWh,GB,Business Standard
+MTR-002,Manchester Warehouse,2023-12-18,2024-01-22,62000,kWh,GB,Industrial
+MTR-003,Delhi Office,2024-02-01,2024-02-29,35000,kWh,IN,Commercial
+MTR-004,New York Office,2024-01-01,2024-01-31,29500,kWh,US,Commercial
+MTR-001,London HQ,2024-02-01,2024-02-29,51200,kWh,GB,Business Standard
